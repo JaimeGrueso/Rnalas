@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Listado de Productos</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilos/detalles.css"> <!-- Enlace al archivo de estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
+        <p onclick="window.location.href='error404.html'">Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p onclick="window.location.href='listado.html'">10% descuento en la primera compra</p>
+        <p onclick="window.location.href='error404.html'">Tarjeta Regalo</p>
+    </header>
+    
+    <main> <!-- Se usa para englobar todo el contenido principal de la página -->
+        <section id="cabecera">
+            <!-- Agrupa los elementos relacionados con la barra de búsqueda -->
+            <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
+
+                <figure id="search-bar">
+                    <button><img src="imagenes/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                    <input type="text" placeholder="Buscar"> <!-- Campo de texto para realizar búsquedas -->
+                    <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                </figure>
+                
+                <button id="dalelike" onclick="window.location.href='error404.html'">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+        </section>
+
+        <nav> <!-- Define la barra de navegación principal -->
+            <div id="as">
+                <a href="#carousel">Marcas</a>
+                <a href="listado.html">Productos</a>
+                <a href="nosotros.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div> 
+            <!-- Iconos para usuario, favoritos y carrito -->
+            <figure id="iconos">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Carrito">
+            </figure>
+        </nav>
+
+        <section class="breadcrumb"> <!-- Se ha utilizado nav para la parte de la ruta -->
+            <a href="inicio.html">Inicio</a><span>  ->  </span><a href="listado.html">Listado de Productos</a>  ->  <a href="#">Detalles del Producto</a> <!-- Ruta de navegación -->
+        </section>
+
+        <section id="principio">
+            <section id="producto"> <!-- Se ha utilizado section para casi todas las partes del código -->
+                <figure id="product-image"> <!-- Imagen del producto -->
+                    <button>&lt;</button> <!-- Botón anterior -->
+                    <img src="imagenes/det1.webp" alt="Producto"> <!-- Imagen principal del producto -->
+                    <button>&gt;</button> <!-- Botón siguiente -->
+                </figure>
+                <aside id="relacionados"> <!-- Imágenes relacionadas -->
+                    <img src="imagenes/det2.webp" alt="Relacionado 1"> <!-- Imagen relacionada 1 -->
+                    <img src="imagenes/det3.jpg" alt="Relacionado 2"> <!-- Imagen relacionada 2 -->
+                    <img src="imagenes/det4.webp" alt="Relacionado 3"> <!-- Imagen relacionada 3 -->
+                    <img src="imagenes/det5.webp" alt="Relacionado 4"> <!-- Imagen relacionada 4 -->
+                </aside>
+            </section>
+
+            <section class="right-section"> <!-- Sección derecha con detalles del producto -->
+                <article class="product-details1"> <!-- Detalles del producto -->
+                    <div id="titulo">Centella Light Cleansing Oil</div> <!-- Título del producto -->
+                    <p>
+                        <p id="subtitulo">Aceite Limpiador Ligero y Suave</p> <br>
+                        <p class = "subsubtitulo">Descripción:</p> <br> La Centella Asiática y 6 aceites de origen vegetal disuelven suavemente el maquillaje, el protector solar y el exceso de sebo en la piel, dejando un acabado fresco y libre de residuos grasos. <br>
+                        <p class = "subsubtitulo">Beneficios del Producto:</p> <br> Calmante, Hidratante, Exfoliación Suave <br>
+                        <p class = "subsubtitulo">Tipo de Piel:</p> <br> Normal, Seca, Sensible <br>
+                        <p class = "subsubtitulo">Ingredientes Clave:</p> <br> Extracto de Centella Asiática, Aceite de Fruta de Bergamota (Citrus Aurantium Bergamia), Aceite de Semilla de Girasol (Helianthus Annuus), Aceite de Fruta de Oliva (Olea Europaea), Aceite de Semilla de Jojoba (Simmondsia Chinensis) <br>
+                    </p>
+                </article>
+                <div class="quantity-section"> <!-- Sección de cantidad y botón de añadir al carrito -->
+                    <section id="add-bar">
+                        <button><img src="diw img/remove_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="20px" alt=""></button>
+                        <input type="text" value="1"> <!-- Campo de texto para realizar búsquedas -->
+                        <button><img src="diw img/add_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" width="20px" alt=""></button>
+                    </section>
+
+                    <button id="añadircarrito">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                </div>
+            </section>
+        </section>
+
+        <section id="segundo">
+            <section class="product-details"> <!-- Sección con más detalles del producto -->
+                <figure>
+                    <img src="imagenes/det6.jpg" width="200px" alt=""> <!-- Imagen adicional del producto -->
+                </figure>
+                <article class="text-content">
+                    <h3>Centella Light Cleansing Oil</h3> <!-- Subtítulo del producto -->
+                    <ul> <!-- Lista de características del producto -->
+                        <li>Un limpiador ligero a base de aceite que derrite suavemente el maquillaje, la suciedad, los aceites y el protector solar sin irritar la zona de los ojos.</li>
+                        <li>Contiene aceite de Centella (Centella extraída con aceite MCT) y 6 aceites botánicos.</li>
+                        <li>El aceite limpiador micelar permite eliminar el exceso de grasa y maquillaje sin retirar los aceites naturales de la piel.</li>
+                        <li>Textura ligera similar al agua, ideal para quienes son nuevos en el uso de limpiadores en aceite.</li>
+                        <li>No comedogénico y disuelve el sebo para prevenir la congestión de los poros.</li>
+                    </ul>
+                    <h3>Centella Light Cleansing Oil</h3> <!-- Subtítulo del producto -->
+                    <p>
+                        El aceite ligero de color marrón claro tiene una textura acuosa, ligera y suave. 
+                        Limpia sin dejar residuos grasos, dejando la piel fresca y renovada.
+                    </p>
+                </article>
+            </section>
+
+            <section id="rel"> <!-- Sección de productos relacionados -->
+                <h1>RELACIONADOS</h1> <!-- Título de la sección -->
+                <aside class="related-products">
+                    <a href=""><img src="imagenes/det5.webp" alt=""></a> <!-- Producto relacionado 1 -->
+                    <a href=""><img src="imagenes/det7.webp" alt=""></a> <!-- Producto relacionado 2 -->
+                    <a href=""><img src="imagenes/det8.webp" alt=""></a> <!-- Producto relacionado 3 -->
+                </aside>
+            </section>
+        </section>
+
+        <section id="tercero">
+            <section class="igredients-section"> <!-- Sección de ingredientes clave -->
+                <article>
+                    <h2>INGREDIENTES CLAVE</h2> <!-- Título de la sección -->
+                    <p>
+                        Extracto de Centella Asiática (1,000 ppm): La Centella Asiática contiene ingredientes activos como el ácido madecásico y el asiaticósido, 
+                        que ayudan en la síntesis de colágeno, promoviendo una excelente cicatrización de heridas y regeneración de la piel. También tiene 
+                        propiedades calmantes que ayudan en el cuidado de problemas cutáneos.
+                    </p>
+                    <p>
+                        Estearato de etilhexilo, etilhexanoato de cetilo, tetraoleato de sorbeth-30, extracto de centella asiática (10 000 ppm), aceite de 
+                        semilla de helianthus annuus (girasol), aceite de fruta de citrus aurantium bergamia (bergamota), aceite de fruta de olea europaea 
+                        (oliva), semilla de simmondsia chinensis (jojoba) Aceite, Etilhexilglicerina, Aceite de Flor de Pelargonium Graveolens, Aceite de 
+                        Flor de Rosa Damascena
+                    </p>
+                </article>
+            </section>
+
+            <section id="reseñas"> <!-- Sección de calificación del producto -->
+                <div class="rating">
+                    <div id="calificacion">
+                        <p>4.2</p>
+                        <p class="stars"></p><!-- Estrellas de calificación -->
+                    </div>
+                    <span>Based on 32 Reviews</span> <!-- Calificación basada en reseñas -->
+                </div>
+                <div id="fortexto">
+                    <div class="user-info">
+                        <h4>María García</h4>
+                        <p class="date">15 Marzo 2024</p>
+                    </div>
+                    <div class="rating-stars">★★★★☆</div>
+                    <p class="comment">
+                        Me encanta este limpiador facial. La textura es muy ligera y elimina el maquillaje sin esfuerzo. 
+                        Mi piel se siente limpia y suave después de usarlo. Definitivamente lo recomiendo para pieles sensibles.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer> <!-- Se ha utilizado footer para el final de la página, donde se han creado dos sections, uno para las fotos y otro para el texto -->
+        <section id="metodos_pago"> <!-- Sección de métodos de pago -->
+            <img src="imagenes/amex.png" height="50px" width="50px" alt="Amex"> <!-- Logo de Amex -->
+            <img src="imagenes/apple.png" height="50px" width="50px" alt="Apple Pay"> <!-- Logo de Apple Pay -->
+            <img src="imagenes/google-pay-logo.jpg" height="50px" width="50px" alt="Google Pay"> <!-- Logo de Google Pay -->
+            <img src="imagenes/logo-Maestro.png" height="50px" width="50px" alt="Maestro"> <!-- Logo de Maestro -->
+            <img src="imagenes/logo_mastercard-despues.jpg" height="50px" width="50px" alt="MasterCard"> <!-- Logo de MasterCard -->
+            <img src="imagenes/shop-app6999.jpg" height="50px" width="50px" alt="Shop App"> <!-- Logo de Shop App -->
+            <img src="imagenes/unionpay.png" height="50px" width="50px" alt="UnionPay"> <!-- Logo de UnionPay -->
+            <img src="imagenes/visa.jpg" height="50px" width="50px" alt="Visa"> <!-- Logo de Visa -->
+        </section>
+        <section id="condiciones"> <!-- Sección de condiciones -->
+            <p>ENVÍOS Y DEVOLUCIONES</p> <!-- Enlace a envíos y devoluciones -->
+            <p>TÉRMINOS Y CONDICIONES</p> <!-- Enlace a términos y condiciones -->
+            <p>DECLARACIÓN DE PRIVACIDAD(UE)</p> <!-- Enlace a declaración de privacidad -->
+            <p>AVISO LEGAL</p> <!-- Enlace a aviso legal -->
+        </section>
+    </footer>
+
+    <!-- Botón flotante con audio -->
+    <button class="boton-flotante" onclick="toggleAudio()"><img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+
+    <!-- Audio oculto -->
+    <audio id="audioChat">
+        <source src="plinplonplin/Pokemon Heart Gold & Soul Silver Remastered - Poke Mart.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function toggleAudio() {
+            let audio = document.getElementById("audioChat");
+            
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>

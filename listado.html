@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="estilos/listado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
+        <p onclick="window.location.href='error404.html'">Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p onclick="window.location.href='listado.html'">10% descuento en la primera compra</p>
+        <p onclick="window.location.href='error404.html'">Tarjeta Regalo</p>
+    </header>
+    
+    <main> <!-- Se usa para englobar todo el contenido principal de la página -->
+        <section id="cabecera">
+            <!-- Agrupa los elementos relacionados con la barra de búsqueda -->
+                <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
+
+                <figure id="search-bar">
+                    <button><img src="imagenes/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                    <input type="text" placeholder="Buscar"> <!-- Campo de texto para realizar búsquedas -->
+                    <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                </figure>
+                
+                <button id="dalelike" onclick="window.location.href='error404.html'">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+        </section>
+
+        <nav> <!-- Define la barra de navegación principal -->
+            <div id="as">
+                <a href="#carousel">Marcas</a>
+                <a href="listado.html">Productos</a>
+                <a href="nosotros.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div> 
+            <!-- Iconos para usuario, favoritos y carrito -->
+            <figure id="iconos">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Carrito">
+            </figure>
+        </nav>
+
+        <section id="josean"> <!-- Se ha utilizado section para todas las demas partes del codigo -->
+            <a href=""><img src="imagenes/Josean.png" alt=""></a>
+        </section>
+
+        <section id="filtros">
+            <div class="left-section">
+                    <span>Filtro</span>
+                    <img src="imagenes/filter.svg" alt="">
+                <label for="opciones">| Ordenar por:</label>
+                    <select id="opciones" name="opciones">
+                        <option value="opcion1">Mas Vendidos</option>
+                        <option value="opcion2">Precio Ascendente</option>
+                        <option value="opcion3">Precio Descendente</option>
+                        <option value="opcion4">Mayor Descuento</option>
+                    </select>
+            </div>
+
+            <!-- Sección derecha -->
+            <div class="right-section">
+                <span>Ver como</span>
+                <img src="imagenes/burgermenu.svg" alt="">
+            </div>
+        </section>
+
+        <section id="container">
+            <aside> <!-- Se ha utilizado aside para la parte de la izquierda donde se encuentran los filtros -->
+                <div class="filters">
+                    <section class="head">
+                    <h3>Precio</h3>
+                    <img src="diw img/remove_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </section>
+                    <div id="precios">
+                        <input type="text" value="€0" disabled>
+                        <span>-</span>
+                        <input type="text" value="€27" disabled>
+                    </div>
+                    <input id="rango" type="range" min="0" max="27" value="€0">
+                </div>
+                <br>
+                <br>
+                <div id="categorias">
+                    <section class="head">
+                    <h3>Categoría</h3>
+                    <img src="diw img/remove_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </section>
+                        <li><input type="checkbox"><span>Serum (2)</span></li>
+                        <li><input type="checkbox"><span>Corporal (1)</span></li>
+                        <li><input type="checkbox"><span>Facial (6)</span></li>
+                        <li><input type="checkbox"><span>Hidratante SPF (1)</span></li>
+                        <li><input type="checkbox"><span>Limpiador (1)</span></li>
+                        <li><input type="checkbox"><span>Exfoliante (1)</span></li>
+                        <li><input type="checkbox"><span>Hidratante (2)</span></li>
+
+                        <br>
+
+                        <a id="mas" href="" >Mostrar más</a>
+                </div>
+                <br>
+                <br>
+                <div id="marcas">
+                    <section class="head">
+                    <h3>Marcas</h3>
+                    <img src="diw img/remove_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </section>
+                        <li><input type="checkbox"><span>Apad (1)</span></li>
+                        <li><input type="checkbox"><span>Atache (1)</span></li>
+                        <li><input type="checkbox"><span>Biologique Recherche (1)</span></li>
+                        <li><input type="checkbox"><span>Avene (1)</span></li>
+                        <li><input type="checkbox"><span>Bioderma (1)</span></li>
+                        <li><input type="checkbox"><span>Roche-Posay (1)</span></li>
+
+                        <br>
+
+                        <a id="mas" href="" >Mostrar más</a>
+                </div>
+                <br>
+                <br>
+                <div id="tipospiel">
+                    <h3>Tipos de Piel</h3>
+                    <img src="diw img/add_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </aside>
+
+            <!-- Listado de productos -->
+            <section id="productos"> <!-- Sección principal para mostrar productos -->
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/Producto 1.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Vegan Kombucha Tea Gel
+                                    <br>
+                                    €27                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/producto 2.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Vegan Kombucha Tea Essense
+                                    <br>
+                                    €25                             
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod3.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    aPAD 20% acelaico
+                                    <br>
+                                    €17                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="diw img/prod4-Photoroom.jpg" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Madagascar Centella Ampoule
+                                    <br>
+                                    €19                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod5.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Baume Lavant Topialyse
+                                    <br>
+                                    €16                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod6.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Oxybiome Cleansing Micellar Water
+                                    <br>
+                                    €22                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod7.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    The Niacinamide 15
+                                    <br>
+                                    €31                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod8.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Step 003 Serum
+                                    <br>
+                                    €25                                
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <article class="prod" onclick="location.href='#'">
+                    <figure>
+                        <a href="detalles.html">
+                            <img src="imagenes/prod9.webp" alt="">
+                            <div class="overlay">
+                                <p>
+                                    Niacinamide Cucumber Aqua Gel Cream
+                                    <br>
+                                    €24                               
+                                </p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer> <!-- Sección final con métodos de pago y enlaces legales -->
+        <section id="metodos_pago"> <!-- Agrupa logotipos de métodos de pago -->
+            <img src="imagenes/amex.png" height="50px" width="50px" alt="Amex">
+            <img src="imagenes/apple.png" height="50px" width="50px" alt="Apple Pay">
+            <img src="imagenes/google-pay-logo.jpg" height="50px" width="50px" alt="Google Pay">
+            <img src="imagenes/logo-Maestro.png" height="50px" width="50px" alt="Maestro">
+            <img src="imagenes/logo_mastercard-despues.jpg" height="50px" width="50px" alt="MasterCard">
+            <img src="imagenes/shop-app6999.jpg" height="50px" width="50px" alt="Shop App">
+            <img src="imagenes/unionpay.png" height="50px" width="50px" alt="UnionPay">
+            <img src="imagenes/visa.jpg" height="50px" width="50px" alt="Visa">
+        </section>
+        
+        <section id="condiciones"> <!-- Enlaces relacionados con términos legales -->
+            <p>ENVÍOS Y DEVOLUCIONES</p>
+            <p>TÉRMINOS Y CONDICIONES</p>
+            <p>DECLARACIÓN DE PRIVACIDAD (UE)</p>
+            <p>AVISO LEGAL</p>
+        </section>
+    </footer>
+
+    <!-- Botón flotante con audio -->
+    <button class="boton-flotante" onclick="toggleAudio()"><img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+
+    <!-- Audio oculto -->
+    <audio id="audioChat">
+        <source src="plinplonplin/Pokemon Heart Gold & Soul Silver Remastered - Poke Mart.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function toggleAudio() {
+            let audio = document.getElementById("audioChat");
+            
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
+        <p onclick="window.location.href='error404.html'">Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p onclick="window.location.href='listado.html'">10% descuento en la primera compra</p>
+        <p onclick="window.location.href='error404.html'">Tarjeta Regalo</p>
+    </header>
+    
+    <main> <!-- Se usa para englobar todo el contenido principal de la página -->
+        <section id="cabecera">
+            <!-- Agrupa los elementos relacionados con la barra de búsqueda -->
+            <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
+
+                <figure id="search-bar">
+                    <button><img src="imagenes/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                    <input type="text" placeholder="Buscar"> <!-- Campo de texto para realizar búsquedas -->
+                    <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                </figure>
+                
+                <button id="dalelike" onclick="window.location.href='error404.html'">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+        </section>
+
+        <nav> <!-- Define la barra de navegación principal -->
+            <div id="as">
+                <a href="#carousel">Marcas</a>
+                <a href="listado.html">Productos</a>
+                <a href="nosotros.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div> 
+            <!-- Iconos para usuario, favoritos y carrito -->
+            <figure id="iconos">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Carrito">
+            </figure>
+        </nav>
+
+        <div id="medio">
+            
+            <img src="diw img/450_1000.jpeg" alt="">
+
+            <section id="mid">
+                <img src="imagenes/Contactanos.png" alt="">
+            
+                <div class="form-container">
+                    <h1>ATENCIÓN AL CLIENTE</h1>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="10" required></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            <label for="privacidad" class="privacidad">Acepto la política de privacidad</label>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <img src="diw img/904de97d6d3f48b63e31128afef9bea4.jpg" alt="">
+            
+        </div>
+
+        
+
+        <section id="abajo">
+            <figure id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.1334790275832!2d4.835637295247353!3d45.7601702070255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb84aa1746bb%3A0x4157f205521f7f2a!2sPlace%20de%20la%20R%C3%A9publique!5e0!3m2!1ses!2ses!4v1739023942025!5m2!1ses!2ses" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+
+            <figure id="trabaja">
+                <img src="diw img/girls.jpg" alt="">
+                <div id="texto-trabaja">
+                    <h1>TRABAJA CON NOSOTROS</h1>
+                    <p>
+                        En Rnala's, creemos que la belleza comienza desde dentro, y eso incluye a nuestro equipo. Buscamos personas apasionadas, 
+                        creativas y comprometidas con la innovación, la sostenibilidad y el bienestar. Si te entusiasma el mundo de la cosmética y quieres 
+                        formar parte de una empresa que valora el talento, la diversidad y el desarrollo profesional, ¡este es tu lugar! <br><br><br>
+
+                        💼 Únete a nuestro equipo y sé parte de la revolución en la cosmética sostenible. <br>
+                        📩 Envíanos tu CV y déjanos conocerte mejor. <br>
+                        👉 Aplica aquí o escríbenos a rrhh@rnala.com
+                    </p>
+                </div>
+            </figure>
+        </section>
+
+        <footer> <!-- Sección final con métodos de pago y enlaces legales -->
+            <section id="metodos_pago"> <!-- Agrupa logotipos de métodos de pago -->
+                <img src="imagenes/amex.png" height="50px" width="50px" alt="Amex">
+                <img src="imagenes/apple.png" height="50px" width="50px" alt="Apple Pay">
+                <img src="imagenes/google-pay-logo.jpg" height="50px" width="50px" alt="Google Pay">
+                <img src="imagenes/logo-Maestro.png" height="50px" width="50px" alt="Maestro">
+                <img src="imagenes/logo_mastercard-despues.jpg" height="50px" width="50px" alt="MasterCard">
+                <img src="imagenes/shop-app6999.jpg" height="50px" width="50px" alt="Shop App">
+                <img src="imagenes/unionpay.png" height="50px" width="50px" alt="UnionPay">
+                <img src="imagenes/visa.jpg" height="50px" width="50px" alt="Visa">
+            </section>
+            
+            <section id="condiciones"> <!-- Enlaces relacionados con términos legales -->
+                <p>ENVÍOS Y DEVOLUCIONES</p>
+                <p>TÉRMINOS Y CONDICIONES</p>
+                <p>DECLARACIÓN DE PRIVACIDAD (UE)</p>
+                <p>AVISO LEGAL</p>
+            </section>
+        </footer>
+
+    <!-- Botón flotante con audio -->
+    <button class="boton-flotante" onclick="toggleAudio()"><img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+
+    <!-- Audio oculto -->
+    <audio id="audioChat">
+        <source src="plinplonplin/Pokemon Heart Gold & Soul Silver Remastered - Poke Mart.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function toggleAudio() {
+            let audio = document.getElementById("audioChat");
+            
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>

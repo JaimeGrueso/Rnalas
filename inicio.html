@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define el uso de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite diseño responsivo -->
+    <title>Inicio</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilos/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> <!-- Se utiliza para el contenido de la parte superior del sitio -->
+        <p onclick="window.location.href='error404.html'">Envíos gratis > a 40€ Península | 75€ Península</p>
+        <p onclick="window.location.href='listado.html'">10% descuento en la primera compra</p>
+        <p onclick="window.location.href='error404.html'">Tarjeta Regalo</p>
+    </header>
+    
+    <main> <!-- Se usa para englobar todo el contenido principal de la página -->
+        <section id="cabecera">
+            <!-- Agrupa los elementos relacionados con la barra de búsqueda -->
+                <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
+
+                <figure id="search-bar">
+                    <button><img src="imagenes/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                    <input type="text" placeholder="Buscar"> <!-- Campo de texto para realizar búsquedas -->
+                    <button><img src="imagenes/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="20px" alt=""></button>
+                </figure>
+                
+                <button id="dalelike" onclick="window.location.href='error404.html'">SUSCRÍBETE A NUESTRA NEWSLETTER</button> <!-- Botón para suscripción -->
+        </section>
+
+        <nav> <!-- Define la barra de navegación principal -->
+            <div id="as">
+                <a href="#carousel">Marcas</a>
+                <a href="listado.html">Productos</a>
+                <a href="nosotros.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div>  
+            <!-- Iconos para usuario, favoritos y carrito -->
+            <figure id="iconos">
+                <img src="imagenes/account_box_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Usuario">
+                <img src="imagenes/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Favoritos">
+                <img src="imagenes/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" onclick="window.location.href='error404.html'" alt="Carrito">
+            </figure>
+        </nav>
+
+        <section id="img-pri"> <!-- Se usa para destacar contenidos importantes -->
+            <img src="diw img/inicio1.jpg" alt="Imagen principal"> <!-- Imagen destacada -->
+            <figure id="botones"> <!-- Agrupa botones de enlace -->
+                <button onclick="window.location.href='error404.html'">LOS 5 INGREDIENTES CLAVE PARA EL VERANO</button> <!-- Botón de enlace -->
+                <button onclick="window.location.href='error404.html'">ÁCIDO AZELAICO | EL GRAN ALIADO CONTRA EL ACNÉ</button>
+                <button onclick="window.location.href='error404.html'">PREVIENE EL FOTOENVEJECIMIENTO</button>
+            </figure>
+        </section>
+
+        <div class="carousel" id="carousel">
+            <div class="carousel-track">
+                <img src="diw img/the-ordinary.webp" alt="Imagen 1">
+                <img src="diw img/cosrx.png" alt="Imagen 2">
+                <img src="diw img/beauty.png" alt="Imagen 3">
+                <img src="diw img/anua.png" alt="Imagen 4">
+                <img src="diw img/klairs.png" alt="Imagen 5">
+                <img src="diw img/laneige.png" alt="Imagen 6">
+                <img src="diw img/lancome.png" alt="Imagen 7">
+                <!-- Clonamos las imágenes para la animación fluida -->
+                <img src="diw img/the-ordinary.webp" alt="Imagen 1">
+                <img src="diw img/cosrx.png" alt="Imagen 2">
+                <img src="diw img/beauty.png" alt="Imagen 3">
+                <img src="diw img/anua.png" alt="Imagen 4">
+                <img src="diw img/klairs.png" alt="Imagen 5">
+                <img src="diw img/laneige.png" alt="Imagen 6">
+                <img src="diw img/lancome.png" alt="Imagen 7">
+            </div>
+        </div>
+
+        <section id="fotos-laterales"> <!-- Contiene secciones como top ventas y novedades -->
+            <article> <!-- Usado para destacar un producto -->
+                <h1>TOP VENTAS</h1> <!-- Título de la categoría -->
+                <img src="diw img/descarga.jpg" alt="Producto top ventas" onclick="window.location.href='listado.html'"> <!-- Imagen del producto -->
+            </article>
+            <article>
+                <h1>NOVEDADES</h1>
+                <img src="diw img/lat.webp" alt="Novedades" onclick="window.location.href='listado.html'">
+            </article>
+        </section>
+
+        <section id="rutinas"> <!-- Para destacar secciones de rutina de día y noche -->
+            <article>
+                <h1>RUTINA DE DIA</h1>
+                <img src="diw img/skincare-dia.png" alt="Rutina de día">
+            </article>
+            <article>
+                <h1>RUTINA DE NOCHE</h1>
+                <img src="diw img/skincare-noche_480x480.webp" alt="Rutina de noche">
+            </article>
+        </section>
+
+        <section id="redes"> <!-- Sección destacada para redes sociales -->
+            <p>SÍGUENOS EN REDES SOCIALES</p>
+        </section>
+
+        <section id="redes_fotos"> <!-- Imágenes relacionadas con redes sociales -->
+            <img src="diw img/2ee10bf7993325c00dd3025135e2d6e4.jpg" alt="Red social 1">
+            <img src="diw img/9882a227-58a9-4d33-a5cd-342b172482d6.webp" alt="Red social 2">
+        </section>
+    </main>
+
+    <footer> <!-- Sección final con métodos de pago y enlaces legales -->
+        <section id="metodos_pago"> <!-- Agrupa logotipos de métodos de pago -->
+            <img src="imagenes/amex.png" height="50px" width="50px" alt="Amex">
+            <img src="imagenes/apple.png" height="50px" width="50px" alt="Apple Pay">
+            <img src="imagenes/google-pay-logo.jpg" height="50px" width="50px" alt="Google Pay">
+            <img src="imagenes/logo-Maestro.png" height="50px" width="50px" alt="Maestro">
+            <img src="imagenes/logo_mastercard-despues.jpg" height="50px" width="50px" alt="MasterCard">
+            <img src="imagenes/shop-app6999.jpg" height="50px" width="50px" alt="Shop App">
+            <img src="imagenes/unionpay.png" height="50px" width="50px" alt="UnionPay">
+            <img src="imagenes/visa.jpg" height="50px" width="50px" alt="Visa">
+        </section>
+        
+        <section id="condiciones"> <!-- Enlaces relacionados con términos legales -->
+            <p>ENVÍOS Y DEVOLUCIONES</p>
+            <p>TÉRMINOS Y CONDICIONES</p>
+            <p>DECLARACIÓN DE PRIVACIDAD (UE)</p>
+            <p>AVISO LEGAL</p>
+        </section>
+    </footer>
+
+    <!-- Botón flotante con audio -->
+    <button class="boton-flotante" onclick="toggleAudio()"><img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+
+    <!-- Audio oculto -->
+    <audio id="audioChat">
+        <source src="plinplonplin/Pokemon Heart Gold & Soul Silver Remastered - Poke Mart.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function toggleAudio() {
+            let audio = document.getElementById("audioChat");
+            
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error404</title>
+    <link rel="stylesheet" href="estilos/Error404.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="inicio.html">
+            <img id="logo" src="imagenes/screenshot.1.jpg" alt="Logotipo" onclick="window.location.href='inicio.html'"> <!-- Logotipo de la tienda -->
+        </a>
+        <section>
+            <a href="inicio.html#carousel">Marcas</a>
+            <a href="listado.html">Productos</a>
+            <a href="nosotros.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </section>
+    </header>
+    <main>
+        <h1>Tu belleza es inmejorable bb, no sé por que intentas buscar más potingues</h1>
+
+        <div id="fondo">
+            <div class="ball"></div>
+        </div>        
+        <button id="back" onclick="location.href='inicio.html'">Volver a Inicio</button>
+    </main>
+
+    <footer> <!-- Sección final con métodos de pago y enlaces legales -->
+        <section id="metodos_pago"> <!-- Agrupa logotipos de métodos de pago -->
+            <img src="imagenes/amex.png" height="50px" width="50px" alt="Amex">
+            <img src="imagenes/apple.png" height="50px" width="50px" alt="Apple Pay">
+            <img src="imagenes/google-pay-logo.jpg" height="50px" width="50px" alt="Google Pay">
+            <img src="imagenes/logo-Maestro.png" height="50px" width="50px" alt="Maestro">
+            <img src="imagenes/logo_mastercard-despues.jpg" height="50px" width="50px" alt="MasterCard">
+            <img src="imagenes/shop-app6999.jpg" height="50px" width="50px" alt="Shop App">
+            <img src="imagenes/unionpay.png" height="50px" width="50px" alt="UnionPay">
+            <img src="imagenes/visa.jpg" height="50px" width="50px" alt="Visa">
+        </section>
+        
+        <section id="condiciones"> <!-- Enlaces relacionados con términos legales -->
+            <p>ENVÍOS Y DEVOLUCIONES</p>
+            <p>TÉRMINOS Y CONDICIONES</p>
+            <p>DECLARACIÓN DE PRIVACIDAD (UE)</p>
+            <p>AVISO LEGAL</p>
+        </section>
+
+    </footer>
+
+    <!-- Botón flotante con audio -->
+    <button class="boton-flotante" onclick="toggleAudio()"><img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+
+    <!-- Audio oculto -->
+    <audio id="audioChat">
+        <source src="plinplonplin/Gwyn, Lord of Cinder - Dark Souls Soundtrack 28.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function toggleAudio() {
+            let audio = document.getElementById("audioChat");
+            
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
