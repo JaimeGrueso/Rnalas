@@ -350,12 +350,12 @@ footer {
     cursor: pointer;
 }
 
-#condiciones h4 {
+#condiciones h3 {
     font-size: 24px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#condiciones h4:hover {
+#condiciones h3:hover {
     color: black;
     transform: scale(1.2);
 }
