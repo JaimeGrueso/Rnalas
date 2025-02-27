@@ -72,13 +72,17 @@ section {
 
 #search-bar {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: #CFDCCF;
     padding: 14px 10px;
     border-radius: 40px;
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
 
+#search-bar label {
+    display: none;
 }
 
 #search-bar img {
@@ -93,6 +97,7 @@ section {
     outline: none;
     border: none;
     background-color: #CFDCCF;
+    margin-right: 13vw;
     font-family: 'Playfair Display', serif;
 }
 
