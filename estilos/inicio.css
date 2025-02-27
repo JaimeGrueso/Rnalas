@@ -16,12 +16,14 @@ header {
     text-align: center;
 }
 
-header p {
+header a {
     transition: color 0.1s linear, transform 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: black;    
 }
 
-header p:hover {
+header a:hover {
     color: white;
     transform: scale(1.2);
 }
@@ -348,12 +350,12 @@ footer {
     cursor: pointer;
 }
 
-#condiciones p {
+#condiciones h4 {
     font-size: 24px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#condiciones p:hover {
+#condiciones h4:hover {
     color: black;
     transform: scale(1.2);
 }
