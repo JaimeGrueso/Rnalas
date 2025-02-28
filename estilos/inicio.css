@@ -365,6 +365,10 @@ footer {
     transform: scale(1.2);
 }
 
+#audioTranscript {
+    display: none;
+}
+
 /* Media Query para Tabletas */
 @media (max-width: 1024px) {
     header {

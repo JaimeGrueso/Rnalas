@@ -128,23 +128,32 @@
     </footer>
 
     <!-- Botón flotante con audio -->
-    <button value="musica" class="boton-flotante" onclick="toggleAudio()"><img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Musica"></button>
+<button value="musica" class="boton-flotante" onclick="toggleAudio()">
+    <img src="diw img/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Musica">
+</button>
 
-    <!-- Audio oculto -->
-    <audio id="audioChat">
-        <source src="plinplonplin/Pokemon Heart Gold & Soul Silver Remastered - Poke Mart.mp3" type="audio/mpeg" aria-label="Background music">
-    </audio>
+<!-- Audio oculto -->
+<audio id="audioChat" aria-label="Background music from Pokémon Poke Mart theme">
+    <source src="plinplonplin/Pokemon Heart Gold & Soul Silver Remastered - Poke Mart.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <script>
-        function toggleAudio() {
-            let audio = document.getElementById("audioChat");
-            
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
+<!-- Transcript for Accessibility -->
+<p id="audioTranscript"><strong>Transcript:</strong> Background music.</p>
+
+<script>
+    function toggleAudio() {
+        let audio = document.getElementById("audioChat");
+        let transcript = document.getElementById("audioTranscript");
+
+        if (audio.paused) {
+            audio.play();
+            transcript.style.display = "block"; 
+        } else {
+            audio.pause();
+            transcript.style.display = "none";
         }
-    </script>
+    }
+</script>
 </body>
 </html>
